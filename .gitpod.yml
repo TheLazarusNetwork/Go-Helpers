@@ -5,17 +5,7 @@ tasks:
       cd httpo && go get && cd -
       cd logo && go get && cd -
       exit
-  
-  - name: postgres
-    command: |
-      docker run --name="netsepio_gateway_db" --rm -d -p 5432:5432 \
-      -e POSTGRES_PASSWORD=netsepio \
-      -e POSTGRES_USER=netsepio \
-      -e POSTGRES_DB=netsepio \
-      postgres:14 -c log_statement=all
-      sleep 12
-      docker exec -it netsepio_gateway_db psql -U netsepio
-    
+
 vscode:
   extensions:
     - golang.go
