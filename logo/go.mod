@@ -1,4 +1,4 @@
-module github.com/TheLazarusNetwork/Go-Helpers/logo
+module github.com/TheLazarusNetwork/go-helpers/logo
 
 go 1.18
 

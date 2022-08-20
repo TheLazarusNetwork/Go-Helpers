@@ -1,4 +1,4 @@
-module github.com/TheLazarusNetwork/Go-Helpers/httpo
+module github.com/TheLazarusNetwork/go-helpers/httpo
 
 go 1.18
 
