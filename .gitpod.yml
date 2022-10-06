@@ -1,4 +1,4 @@
-workspaceLocation: Go-Helpers/go-helpers.code-workspace
+workspaceLocation: go-helpers/go-helpers.code-workspace
 tasks:
   - init: |
       go install gotest.tools/gotestsum@latest
