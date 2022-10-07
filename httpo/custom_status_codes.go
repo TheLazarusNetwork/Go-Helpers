@@ -1,7 +1,7 @@
 package httpo
 
 const (
-	// Auth issues
+	// Access issues
 
 	// Occurs when token is expired
 	TokenExpired = 4031
@@ -11,6 +11,9 @@ const (
 
 	// Occurs when signatures public key doesn't match to the one which was used while requesting challenge
 	SignatureDenied = 4034
+
+	// Occues when user is locked and cannot perform certain operations
+	UserLocked = 4035
 
 	// Requet params issues
 
