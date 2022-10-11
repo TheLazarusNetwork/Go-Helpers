@@ -36,4 +36,7 @@ const (
 
 	// Account trying to refer in chain doesn't exist, this means that account doesn't have any in or out transactions and therefore it has 0 balance
 	AccountNotFound = 4043
+
+	// Service trying to refer by id doesn't exist
+	ServiceNotFound = 4044
 )
