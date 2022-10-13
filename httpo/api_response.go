@@ -26,8 +26,16 @@ func (apiRes *ApiResponse[T]) SendD(c *gin.Context) {
 	c.JSON(apiRes.StatusCode, apiRes)
 }
 
-// NewSuccessResponse returns ApiResponse for success
-func NewSuccessResponse[T any](customStatusCode int, message string, payload T) *ApiResponse[T] {
+// NewSuccessResponse returns ApiResponse for success without payload
+func NewSuccessResponse(customStatusCode int, message string) *ApiResponse[any] {
+	return &ApiResponse[any]{
+		StatusCode: customStatusCode,
+		Message:    message,
+	}
+}
+
+// NewSuccessResponse returns ApiResponse for success with payload
+func NewSuccessResponseP[T any](customStatusCode int, message string, payload T) *ApiResponse[T] {
 	return &ApiResponse[T]{
 		StatusCode: customStatusCode,
 		Message:    message,
