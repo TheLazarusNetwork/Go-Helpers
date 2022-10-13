@@ -36,8 +36,8 @@ func NewSuccessResponse[T any](customStatusCode int, message string, payload T) 
 }
 
 // NewSuccessResponse returns ApiResponse for error
-func NewErrorResponse[T any](customStatusCode int, errorStr string) *ApiResponse[T] {
-	return &ApiResponse[T]{
+func NewErrorResponse(customStatusCode int, errorStr string) *ApiResponse[any] {
+	return &ApiResponse[any]{
 		StatusCode: customStatusCode,
 		Error:      errorStr,
 	}
