@@ -15,7 +15,7 @@ const (
 	// Occues when user is locked and cannot perform certain operations
 	UserLocked = 4035
 
-	// Requet params issues
+	// Request issues
 
 	// The header doesn't contain Authorization header or it is empty
 	AuthHeaderMissing = 4001
@@ -25,6 +25,9 @@ const (
 
 	// The provided wallet address is not compatible to the chain
 	WalletAddressInvalid = 4003
+
+	// The total cart amount doesn't match amount calculated on server
+	CartTotalIncorrect = 4004
 
 	// State issues
 
