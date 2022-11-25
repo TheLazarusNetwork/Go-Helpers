@@ -31,6 +31,9 @@ const (
 	
 	// Item already exist
 	ItemAlreadyExist = 4005
+	
+	// Item doesn't exist (also foreign key violation)
+	ItemDoesNotExist = 4006
 
 	// State issues
 
