@@ -28,6 +28,9 @@ const (
 
 	// The total cart amount doesn't match amount calculated on server
 	CartTotalIncorrect = 4004
+	
+	// Item already exist
+	ItemAlreadyExist = 4005
 
 	// State issues
 
