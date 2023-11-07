@@ -1,6 +1,12 @@
 package httpo
 
 const (
+
+	// Half success
+
+	// Occurs when transaction is succeful but failed to add in DB
+	TXDbFailed = 5001
+	
 	// Access issues
 
 	// Occurs when token is expired
