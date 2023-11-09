@@ -4,7 +4,7 @@ const (
 
 	// Half success
 
-	// Occurs when transaction is succeful but failed to add in DB
+	// Occurs when transaction is successful but failed to update in DB
 	TXDbFailed = 5001
 	
 	// Access issues
